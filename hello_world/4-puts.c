@@ -1,8 +1,8 @@
-#include<string.h>
 #include<stdio.h>
 
 /**
-*adsasd
+*main - esto es una cagada
+*Return: esto retorna
 */
 
 int main(void)
