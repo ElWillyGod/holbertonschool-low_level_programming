@@ -1,10 +1,12 @@
 #include<string.h>
 #include<stdio.h>
-int main(void){
 
-char mensaje [] ="\"Programming is like building a multilingual puzzle";
+int main(void)
+{
 
-puts (mensaje);
+char mensaje[] = "\"Programming is like building a multilingual puzzle";
 
-return 0;
+puts(mensaje);
+
+return (0);
 }
