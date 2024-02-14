@@ -1,12 +1,14 @@
 #include<string.h>
 #include<stdio.h>
 
+/*
+*adsasd
+*/
+
 int main(void)
 {
 
-char mensaje[] = "\"Programming is like building a multilingual puzzle";
-
-puts(mensaje);
+puts("\"Programming is like building a multilingual puzzle");
 
 return (0);
 }
