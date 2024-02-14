@@ -1,2 +1,2 @@
 #!/bin/bash
-./$CFILE >> c; chmod 101 c
+gcc -o $CFILE  >> c
