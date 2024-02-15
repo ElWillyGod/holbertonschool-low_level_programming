@@ -5,8 +5,10 @@
 *Return: que signo tiene el numero
 */
 
-int main(int *n)
+int main(void)
 {
+	int n;
+
 	if (n < 0)
 	{
 	printf("%d is negative", n);
