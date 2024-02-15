@@ -1,11 +1,11 @@
 #include<stdio.h>
 /**
-*mein - algo
+*main - algo
 *@n: numero a evaluar
 *Return: que signo tiene el numero
 */
 
-int mein(int n)
+int main(int n)
 {
 	if (n < 0)
 	{
