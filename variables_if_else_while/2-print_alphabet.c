@@ -13,6 +13,6 @@ int main(void)
 	printf("%c", letra);
 	letra++;
 	}
-
+	printf("\n");
 	return (0);
 }
