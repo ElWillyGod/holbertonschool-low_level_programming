@@ -24,7 +24,7 @@ int main(void)
 	{
 		if (ultimoNumero > 5)
 		{
-		prinf("is %d and is greater than 5", ultimoNumero);
+		printf("is %d and is greater than 5", ultimoNumero);
 		}
 		if (ultimoNumer < 6)
 		{
