@@ -5,7 +5,7 @@
 *Return: que signo tiene el numero
 */
 
-int main(int n)
+int main(int *n)
 {
 	if (n < 0)
 	{
