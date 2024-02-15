@@ -6,7 +6,7 @@
 
 int main(void)
 {
-	char letra = '97'
+	char letra = '97';
 
 	while (letra <= 122)
 	{
