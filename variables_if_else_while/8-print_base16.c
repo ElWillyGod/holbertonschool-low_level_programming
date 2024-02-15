@@ -10,7 +10,7 @@ int main(void)
 	for (i = 48; i <= 102; i++)
 	{
 	if ((i < 58) && (i < 96))
-		putchar(i)
+		putchar(i);
 	}
 
 	puchear(10);
