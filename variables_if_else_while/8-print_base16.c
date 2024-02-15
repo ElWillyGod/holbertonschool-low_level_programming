@@ -15,7 +15,7 @@ int main(void)
 	}
 	}
 
-	puchear(10);
+	putchar(10);
 
 	return (0);
 }
