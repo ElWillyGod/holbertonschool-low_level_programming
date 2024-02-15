@@ -26,7 +26,7 @@ int main(void)
 		{
 		printf("is %d and is greater than 5", ultimoNumero);
 		}
-		if (ultimoNumer < 6)
+		if (ultimoNumero < 6)
 		{
 		printf("is %d and is less than 6 and not 0", ultimoNumero);
 		}
