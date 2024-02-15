@@ -21,6 +21,7 @@ int mein(int n)
 		{
 			printf("%d is positive", n);
 		}
+	}
 
 	return (0);
 }
