@@ -1,36 +1,33 @@
 #include<stdlib.h>
 #include<time.h>
 #include<stdio.h>
-
 /**
-*main - no se que
+*main - no se qnume
 *Return: codigo de error
 */
-
 int main(void)
 {
 	int n;
-	int ultimoNumero;
+	int num;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	ultimoNumero = n % 10;
+	num = n % 10;
 
-	if (ultimoNumero == 0)
+	if (num == 0)
 	{
-	printf("Last digit of %d is %d and is 0\n", n, ultimoNumero);
+	printf("Last digit of %d is %d and is 0\n", n, num);
 	}
 	else
 	{
-		if (ultimoNumero > 5)
+		if (num > 5)
 		{
-		printf("Last digit of %d is %d and is greater than 5\n", n, ultimoNumero);
+		printf("Last digit of %d is %d and is greater than 5\n", n, num);
 		}
-		if (ultimoNumero < 6)
+		if (num < 6)
 		{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, ultimoNumero);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, num);
 		}
 	}
-
 	return (0);
 }
