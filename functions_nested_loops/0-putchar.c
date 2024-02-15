@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include "main.h"
 /**
 *main - cositas
 *Return: anda a saber vos
