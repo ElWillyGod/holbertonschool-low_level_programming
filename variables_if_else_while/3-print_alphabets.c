@@ -11,12 +11,14 @@ int main(void)
 	while (c <= 122)
 	{
 	printf("%c", c);
+	c++;
 	}
 	c = 65;
 
 	while (c <= 90)
 	{
 	printf("%c", c);
+	c++;
 	}
 	printf("\n");
 
