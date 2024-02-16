@@ -57,4 +57,12 @@ int print_sign(int n);
 
 int _abs(int n);
 
+/**
+*print_last_digit - valor absoluto
+*@n: int para el valor absoluto
+*Return: tipo de valor
+*/
+
+int print_last_digit(int n);
+
 #endif /* MAIN_H */
