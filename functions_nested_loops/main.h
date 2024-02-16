@@ -17,4 +17,12 @@ void print_alphabet(void);
 
 void print_alphabet_x10(void);
 
+/**
+*_islower - ver si es minuscula o no
+*@c: int del char
+*Return: 1 si es minuscula y 0 si no
+*/
+
+int _islower(int c);
+
 #endif /* MAIN_H */
