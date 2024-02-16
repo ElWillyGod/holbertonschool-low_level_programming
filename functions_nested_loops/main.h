@@ -38,8 +38,16 @@ int _islower(int c);
 /**
 *_isalpha - mayusculas
 *Return: 0 o 1 segun tu hermana es gay o no
+*@c: char en el int
 */
 
 int _isalpha(int c);
+
+/**
+*print_sign - imprime el signo
+*Return: retorna el signo del numero 
+*/
+
+int print_sign(int n);
 
 #endif /* MAIN_H */
