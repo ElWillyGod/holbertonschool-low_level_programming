@@ -5,6 +5,6 @@
 *Return: ni idea
 */
 
-void _putchar(void);
+int _putchar(char c);
 
 #endif /* MAIN_H */
