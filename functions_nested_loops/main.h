@@ -15,6 +15,6 @@ void print_alphabet(void)
 	letra++;
 	}
 	printf("\n");
-	return (0);
+
 }
 #endif /* MAIN_H */
