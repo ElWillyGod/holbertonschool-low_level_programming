@@ -49,4 +49,12 @@ int _isalpha(int c);
 
 int print_sign(int n);
 
+/**
+*_abs - valor absoluto
+*@n: int para el valor absoluto
+*Return: tipo de valor
+*/
+
+int _abs(int n);
+
 #endif /* MAIN_H */
