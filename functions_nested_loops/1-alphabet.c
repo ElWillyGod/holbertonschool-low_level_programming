@@ -1,12 +1,18 @@
 #include "main.h"
 /**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
+*print_alphabet - cosas
+*Return: ni idea
+*/
+void print_alphabet(void)
 {
-	print_alphabet();
+	char letra = 97;
 
-	return (0);
+	while (letra <= 122)
+	{
+	printf("%c", letra);
+	letra++;
+	}
+	printf("\n");
+
 }
+
