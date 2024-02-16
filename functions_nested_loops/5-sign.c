@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+
 /**
 *print_sign - imprime el signo
 *@n: no se bien
@@ -10,19 +10,19 @@ int print_sign(int n)
 {
 	if (n > 0)
 	{
-		printf("+");
+		_putchar('+');
 		return (1);
 	}
 	else
 	{
 		if (n < 0)
 		{
-			printf("-");
+			_putchar('-');
 			return (-1);
 		}
 		else
 		{
-			printf("0");
+			_putchar('0');
 			return (0);
 		}
 	}
