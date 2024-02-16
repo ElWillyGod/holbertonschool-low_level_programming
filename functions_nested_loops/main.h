@@ -1,9 +1,10 @@
-#include<stdio.h>
-#include<string.h>
+#ifndef MAIN_H
+#define MAIN_H
 /**
-*imp - cosas
+*_putchar - cosas
 *Return: ni idea
 */
 
-void imp(void);
+void _putchar(void);
 
+#endif /* MAIN_H */

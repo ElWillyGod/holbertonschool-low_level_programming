@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
 *main - cositas
@@ -6,15 +7,15 @@
 
 int main(void)
 {
-	imp(void);
+	_putchar();
 	return (0);
 }
 
 /**
-*imp - nop
+*_putchar - nop
 *Return: xd
 */
-void imp(void)
+void _putchar(void)
 {
 	printf("_putchar\n");
 }
