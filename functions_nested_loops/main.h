@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "1-alphabet.c"
+
 #ifndef MAIN_H
 #define MAIN_H
 

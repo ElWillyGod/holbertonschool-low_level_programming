@@ -11,7 +11,15 @@ void print_alphabet_x10(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-	print_alphabet();
+	char letra = 97;
+
+	while (letra <= 122)
+	{
+		printf("%c", letra);
+		letra++;
+	}
+	printf("\n");
+
 	}
 }
 
