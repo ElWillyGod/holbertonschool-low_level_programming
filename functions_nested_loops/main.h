@@ -5,6 +5,11 @@
 *Return: ni idea
 */
 
-int _putchar(char c);
+void _putchar(void);
+
+void _putchar(void)
+{
+	printf("esoo");
+}
 
 #endif /* MAIN_H */
