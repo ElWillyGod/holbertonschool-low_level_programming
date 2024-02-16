@@ -35,4 +35,11 @@ void print_alphabet_x10(void);
 
 int _islower(int c);
 
+/**
+*_isalpha - mayusculas
+*Return: 0 o 1 segun tu hermana es gay o no
+*/
+
+int _isalpha(int c);
+
 #endif /* MAIN_H */
