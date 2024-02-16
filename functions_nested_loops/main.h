@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 #ifndef MAIN_H
 #define MAIN_H
 /**
@@ -11,8 +12,10 @@ void print_alphabet(void)
 
 	while (letra <= 122)
 	{
+
 	printf("%c", letra);
 	letra++;
+
 	}
 	printf("\n");
 
