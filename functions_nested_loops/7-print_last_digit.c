@@ -3,7 +3,7 @@
 /**
 *print_last_digit - asdsa
 *@n: asdsa
-*Retutn: sada
+*Return: sada
 */
 
 int print_last_digit(int n)
@@ -17,5 +17,5 @@ int print_last_digit(int n)
 
 	_putchar(c + '0');
 
-	return (n % 10);
+	return (c);
 }
