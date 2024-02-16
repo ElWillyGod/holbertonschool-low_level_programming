@@ -1,5 +1,5 @@
 #include "main.h"
-#include<ctype.c>
+#include<ctype.h>
 /**
 *_islower - si es minuscula o no
 *@c: int del char
