@@ -5,7 +5,7 @@
 *Return: ni idea
 */
 void print_alphabet(void)
-}
+{
 	char letra = 97;
 
 	while (letra <= 122)
