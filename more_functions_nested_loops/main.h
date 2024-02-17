@@ -81,4 +81,12 @@ void print_line(int n);
 
 void print_diagonal(int n);
 
+/**
+ * print_square - imprime un cuadrado
+ * @size: tamanio del cuadraro
+ * Return: no tiene
+ */
+
+void print_square(int size);
+
 #endif  /* MAIN_H */
