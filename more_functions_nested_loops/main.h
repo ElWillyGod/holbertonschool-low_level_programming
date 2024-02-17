@@ -1,3 +1,6 @@
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <stdio.h>
 #include <string.h>
 #include <ctype.h>
@@ -46,9 +49,11 @@ int mul(int a, int b);
 void print_numbers(void);
 
 /**
- * print_most_numbers
+ * print_most_numbers - asdasd
  *
  * Return: nada si solo muesto jaja
  */
 
 void print_most_numbers(void);
+
+#endif  /* MAIN_H */

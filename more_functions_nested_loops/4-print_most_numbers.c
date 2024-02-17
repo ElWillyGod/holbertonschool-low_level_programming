@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_most_number - numeros menos el 2 y 4
+ * print_most_numbers - numeros menos el 2 y 4
  *
  * Return: nada
  */
 
-void print_most_number(void)
+void print_most_numbers(void)
 {
 	int i;
 
