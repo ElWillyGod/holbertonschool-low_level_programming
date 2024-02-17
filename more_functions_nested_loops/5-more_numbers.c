@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * more_numbres - numeros del 0 - 14 10 veces
+ * more_numbers - numeros del 0 a 14 10 veces
  *
  * Return: nada
  */
