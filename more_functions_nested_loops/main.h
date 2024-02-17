@@ -44,3 +44,11 @@ int mul(int a, int b);
  */
 
 void print_numbers(void);
+
+/**
+ * print_most_numbers
+ *
+ * Return: nada si solo muesto jaja
+ */
+
+void print_most_numbers(void);
