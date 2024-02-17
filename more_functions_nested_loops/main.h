@@ -25,3 +25,11 @@ int _isdigit(int c);
  */
 
 int mul(int a, int b);
+
+/**
+ * print_numbers - imprime los numeros
+ *
+ * Return: muestra los numeros
+ */
+
+void print_numbers(void);
