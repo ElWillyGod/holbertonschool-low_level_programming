@@ -9,5 +9,5 @@
 
 int _isupper(int c)
 {
-	return ((isupper(c) == 1) ? 0 : 1);
+	return ((isupper(c) > 0) ? 1 : 0);
 }
