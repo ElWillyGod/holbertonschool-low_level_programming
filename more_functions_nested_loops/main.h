@@ -65,5 +65,11 @@ void print_most_numbers(void);
 
 void more_numbers(void);
 
+/**
+ * print_line
+ * @n: numero de lineas
+ * Return: nada
+ */
 
+void print_line(int n);
 #endif  /* MAIN_H */
