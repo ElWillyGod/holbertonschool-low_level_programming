@@ -18,6 +18,6 @@ void more_numbers(void)
 			printf("%d", j);
 		}
 
-		_putchar(10);
+		printf("\n");
 	}
 }
