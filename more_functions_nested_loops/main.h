@@ -24,4 +24,4 @@ int _isdigit(int c);
  * Return: la multiplicacion
  */
 
-int mul(int a, int b);1
+int mul(int a, int b);
