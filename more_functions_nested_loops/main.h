@@ -16,3 +16,12 @@ int _isupper(int c);
  */
 
 int _isdigit(int c);
+
+/**
+ * mul - multiplica dos numero
+ * @a: numero uno
+ * @b: numero dos
+ * Return: la multiplicacion
+ */
+
+int mul(int a, int b);1
