@@ -7,4 +7,4 @@
  *Return: retornamos si es mayuscula o no
  */
 
-int _isipper(int c);
+int _isupper(int c);
