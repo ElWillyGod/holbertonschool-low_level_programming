@@ -72,4 +72,13 @@ void more_numbers(void);
  */
 
 void print_line(int n);
+
+/**
+ * print_diagonal
+ * @n: numero de lineas
+ * Return: nada
+ */
+
+void print_diagonal(int n);
+
 #endif  /* MAIN_H */
