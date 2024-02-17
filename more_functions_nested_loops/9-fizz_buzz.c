@@ -2,7 +2,7 @@
 
 /**
  * main - mostar fizz si es multiplo de 3
- * 	- Buzz si es multiplo de 5
+ * Buzz si es multiplo de 5
  * Return: void
  */
 
@@ -24,7 +24,7 @@ int main(void)
 			}
 			else
 			{
-				if((n % 5) == 0)
+				if ((n % 5) == 0)
 				{
 					printf("Buzz ");
 				}
@@ -36,5 +36,6 @@ int main(void)
 		}
 	}
 
+	printf("\n");
 	return (0);
 }
