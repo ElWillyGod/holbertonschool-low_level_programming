@@ -29,7 +29,5 @@ void more_numbers(void)
 
 			write(1, &d, 1);
 		}
-
-		_putchar(10);
 	}
 }
