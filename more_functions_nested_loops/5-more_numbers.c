@@ -9,15 +9,27 @@
 void more_numbers(void)
 {
 	int i, j;
+	char d;
 
 	for (i = 0; i <= 10; i++)
 	{
 
-		for (j = 0; j <= 14; j++)
+		for (j = 0; j < 10; j++)
 		{
-			printf("%d", j);
+			_putchar(j + '0');
 		}
 
-		printf("\n");
+		for (j = 0; j <= 4; j++)
+		{
+			d = '1';
+
+			write(1, &d, 1);
+
+			d = j + '0';
+
+			write(1, &d, 1);
+		}
+
+		_putchar(10);
 	}
 }
