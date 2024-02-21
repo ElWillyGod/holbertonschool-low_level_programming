@@ -41,3 +41,11 @@ int _strlen(char *s);
  */
 
 void _puts(char *str);
+
+/**
+ * print_rev - imprime el reverso de un char
+ * @s: es el string
+ * Return: solo muestra el string invertido, void
+ */
+
+void print_rev(char *s);
