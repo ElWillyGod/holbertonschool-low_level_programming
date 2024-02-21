@@ -2,6 +2,14 @@
 #include <string.h>
 
 /**
+ * _putchar - imprime un char
+ * @n: char
+ * Return: null
+ */
+
+int _putchar(char n);
+
+/**
  * reset_to_98 - cambiar numero a 98
  * @n: puntero
  * Return: nada
@@ -25,3 +33,11 @@ void swap_int(int *a, int *b);
  */
 
 int _strlen(char *s);
+
+/**
+ * _puts - mostrar el contenido de una cadena 
+ * @str: cadena
+ * Return: nada, solo imprime la cadena
+ */
+
+void _puts(char *str);
