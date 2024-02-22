@@ -2,7 +2,7 @@
 
 /**
  * rev_string - da vuelta el string y lo imprime
- * s@: el string que da vuelta 
+ * @s: el string que da vuelta
  * Return: muestra solamente el string dado vuelta
  */
 
