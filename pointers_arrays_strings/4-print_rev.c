@@ -18,4 +18,7 @@ void print_rev(char *s)
 
 		_putchar(*s);
 	}
+
+	if (s[0] == '\0')
+		_putchar(10);
 }
