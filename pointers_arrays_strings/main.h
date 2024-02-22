@@ -57,3 +57,11 @@ void print_rev(char *s);
  */
 
 void rev_string(char *s);
+
+/**
+ * puts2 - imprime el string de a dos
+ * @str: string a imprimir
+ * Return; nada, solo imprime
+ */
+
+void puts2(char *str);
