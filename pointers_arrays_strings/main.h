@@ -83,3 +83,11 @@ void puts_half(char *str);
 
 void print_array(int *a, int n);
 
+/**
+ * _strcpy - copia un string
+ * @dest: copia del string
+ * @src: string a copiar
+ * Retunr: dest, copia del string
+ */
+
+char *_strcpy(char *dest, char *src);
