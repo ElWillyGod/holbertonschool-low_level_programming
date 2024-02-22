@@ -73,3 +73,13 @@ void puts2(char *str);
  */
 
 void puts_half(char *str);
+
+/**
+ * print_array - imprimir n elementos de un array
+ * @a: matriz 
+ * @n: cantidad de numeros 
+ * Retunr: void, imprimir n cantidad de numeros
+ */
+
+void print_array(int *a, int n);
+
