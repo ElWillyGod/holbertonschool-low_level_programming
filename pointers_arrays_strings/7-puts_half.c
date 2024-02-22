@@ -16,7 +16,7 @@ void puts_half(char *str)
 
 	if (largo % 2)
 	{
-		mitad ++;
+		mitad++;
 	}
 
 	while (mitad < largo)
