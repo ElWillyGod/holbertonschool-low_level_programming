@@ -8,17 +8,15 @@
 
 void print_rev(char *s)
 {
-	if (*s == '\0')
-	{
-		return;
-	}
-	else
-	{
-		print_rev(&s[1]);
+	int i;
 
+	for (; *s != '\0'; s++)
+		i++;
+
+	for (; i != - 1; i--)
+	{
 		_putchar(*s);
+		s--;
 	}
-
-	if (s[0] == '\0')
-		_putchar(10);
+	_putchar(10);
 }
