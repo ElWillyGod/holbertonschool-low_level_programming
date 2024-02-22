@@ -65,3 +65,11 @@ void rev_string(char *s);
  */
 
 void puts2(char *str);
+
+/**
+ * puts_half - imprime la mitad de una cadena 
+ * @str: el strin aque debemos mostrar
+ * Retunr: void, mostramos el contenido
+ */
+
+void puts_half(char *str);
