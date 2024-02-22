@@ -49,3 +49,11 @@ void _puts(char *str);
  */
 
 void print_rev(char *s);
+
+/**
+ * rev_string - da vuelta un string
+ * @s: cadena a dar vuelta
+ * Return: void solo muestra 
+ */
+
+void rev_string(char *s);
