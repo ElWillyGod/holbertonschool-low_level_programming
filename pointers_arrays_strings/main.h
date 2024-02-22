@@ -91,3 +91,12 @@ void print_array(int *a, int n);
  */
 
 char *_strcpy(char *dest, char *src);
+
+/**
+ * _atoi - pasaremos de string a int, segun los signos que encontremos 
+ * @s: cadena de string que cambiaremos
+ *
+ * Return: char convert to string segun nos signos
+ */
+
+int  _atoi(char *s);
