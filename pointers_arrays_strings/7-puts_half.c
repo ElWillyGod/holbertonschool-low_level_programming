@@ -3,7 +3,7 @@
 /**
  * puts_half - imprimimos la mitad de un string
  * @str: array de char
- * Return: void, muestra la mitad del char 
+ * Return: void, muestra la mitad del char
  */
 void puts_half(char *str)
 {
