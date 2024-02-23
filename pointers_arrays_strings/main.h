@@ -100,3 +100,14 @@ char *_strcpy(char *dest, char *src);
  */
 
 int  _atoi(char *s);
+
+/**
+ * _strcat - concatena dos string
+ * @dest: ptimer string
+ * @src: string a dejar concatenado
+ *
+ * Return: el puntero que contiene la cadena unida
+ */
+
+char *_strcat(char *des, char *src);
+
