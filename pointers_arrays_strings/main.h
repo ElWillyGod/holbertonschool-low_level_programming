@@ -120,3 +120,14 @@ char *_strcat(char *des, char *src);
  */
 
 char *_strncat(char *dest, char *src, int n);
+
+/**
+ * _strncpy - funciona igual a strncpy
+ * @dest: primer string
+ * @src: segunad parte del string
+ * @n: largo de bytes
+ *
+ * Return: esting concatenado
+ */
+
+char *_strncpy(char *dest, char *src, int n);
