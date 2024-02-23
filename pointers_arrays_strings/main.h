@@ -111,3 +111,12 @@ int  _atoi(char *s);
 
 char *_strcat(char *des, char *src);
 
+/**
+ * _strncat - concatenar dos sting pero sin caontener mas bytes que src
+ * @dest: primera parte de la cadena
+ * @src: segunda parte
+ *
+ * Return: cadena concatenada
+ */
+
+char *_strncat(char *dest, char *src, int n);
