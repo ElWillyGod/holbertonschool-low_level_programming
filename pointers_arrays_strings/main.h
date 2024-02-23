@@ -131,3 +131,13 @@ char *_strncat(char *dest, char *src, int n);
  */
 
 char *_strncpy(char *dest, char *src, int n);
+
+/**
+ * _strcm - devuelve un numero menor si s1 es menot , cero si son igurales, mayor si es mayor
+ * @s1: char uno
+ * @s2: char dos
+ *
+ * Retunr: numero menot a cero, igual o mayor
+ */
+
+int _strcmp(char *s1, char *s2);
