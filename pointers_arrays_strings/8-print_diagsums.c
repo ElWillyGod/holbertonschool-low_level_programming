@@ -12,19 +12,15 @@
 void print_diagsums(int *a, int size)
 {
 	int traza, trazant;
-	int i, indiInf, ace;
+	int i;
 
 	traza = 0;
 	trazant = 0;
-	ace = 0;
-	indiInf = size - 1;
 
 	for (i = 0; i < size; i++)
 	{
-		traza += *(a + i * size + ace);
-		trazant += *(a + i * size + indiInf);
-		ace += 1;
-		indiInf -= 1;
+		traza += *(a + i * size + i);
+		trazant += *(a + i * size + (size - 1 - i));
 	}
 
 	printf("%d, %d\n", traza, trazant);
