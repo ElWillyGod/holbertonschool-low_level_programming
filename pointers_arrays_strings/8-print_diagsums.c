@@ -13,6 +13,9 @@ void print_diagsums(int *a, int size)
 {
 	int traza, trazant;
 	int i, indiInf, ace;
+
+	traza = 0;
+	trazant = 0;
 	ace = 0;
 	indiInf = size - 1;
 
@@ -20,8 +23,8 @@ void print_diagsums(int *a, int size)
 	{
 		traza += *(a + i * size + ace);
 		trazant += *(a + i * size + indiInf);
-		ace++;
-		indiInf--;
+		ace += 1;
+		indiInf -= 1;
 	}
 
 	printf("%d, %d\n", traza, trazant);
