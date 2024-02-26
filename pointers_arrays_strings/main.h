@@ -141,3 +141,23 @@ char *_strncpy(char *dest, char *src, int n);
  */
 
 int _strcmp(char *s1, char *s2);
+
+/**
+ * reverse_array - dar vuelta un array
+ * @a: array a dar vuelta;
+ * @n: largo del array 
+ *
+ *Return: void, solamente invertimos el array
+ */
+
+void reverse_array(int *a, int n);
+
+/**
+ * print_chessboard - imrpime the chessboard
+ *
+ * @a: array de 8 poss;
+ *
+ * Return: void, solo muetstra el tablear
+ */
+
+void print_chessboard(char (*a)[8]);
