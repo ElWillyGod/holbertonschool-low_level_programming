@@ -5,7 +5,7 @@
  *
  * @a: la matriz de bloques
  *
- * Return: void; solo muerta el tablero;
+ * Return: void solo muerta el tablero;
  */
 
 

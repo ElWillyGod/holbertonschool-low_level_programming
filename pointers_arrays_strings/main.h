@@ -161,3 +161,12 @@ void reverse_array(int *a, int n);
  */
 
 void print_chessboard(char (*a)[8]);
+
+/**
+ * print_diagsums - prints the sum of the two diagonals of a square matrix of integers.
+ * @a: matriz;
+ * @size: tamanio de la matriz
+ * Return: void, solo imprime la suma de la diagonal de la matriz
+ */
+
+void print_diagsums(int *a, int size);
