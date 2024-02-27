@@ -60,4 +60,13 @@ int factorial(int n);
 
 int _pow_recursion(int x, int y);
 
+/**
+ * _sqrt_recursion - raiz cuadrada de un numero
+ * @n: nuero a sacar raiz
+ *
+ * Return: retirna el int que de su raiz cuadrada, -1 si no es entero
+ */
+
+int _sqrt_recursion(int n);
+
 #endif /* MAIN_H*/
