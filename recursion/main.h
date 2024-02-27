@@ -41,4 +41,13 @@ void _print_rev_recursion(char *s);
 
 int _strlen_recursion(char *s);
 
+/**
+ * factorial - factorial del numero
+ * @n: numero a factorizar
+ *
+ * Return: retorna el int de la factoizacion
+ */
+
+int factorial(int n);
+
 #endif /* MAIN_H*/
