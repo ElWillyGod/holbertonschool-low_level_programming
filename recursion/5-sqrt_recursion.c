@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * sqrt - raiz cuadrada
+ * sqrt_fun - raiz cuadrada
  * @i: numero a sacar la raiz cuadrada
  * @j: exponente;
  *
