@@ -45,5 +45,5 @@ int _sqrt_recursion(int n)
 	 * calcular la raiz cuadrada
 	 */
 
-	return (sqrt(n, 0);
+	return (sqrt(n, 0));
 }
