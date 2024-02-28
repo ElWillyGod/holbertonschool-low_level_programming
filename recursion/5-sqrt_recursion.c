@@ -8,7 +8,7 @@
  * Return: raiz cuadrada
  */
 
-int sqrt(int i, int j)
+int sqrt_fun(int i, int j)
 {
 	if (i == (j * j))
 	{
@@ -22,7 +22,7 @@ int sqrt(int i, int j)
 		}
 		else
 		{
-			return (sqrt(i, j + 1));
+			return (sqrt_fun(i, j + 1));
 		}
 	}
 }
@@ -45,5 +45,5 @@ int _sqrt_recursion(int n)
 	 * calcular la raiz cuadrada
 	 */
 
-	return (sqrt(n, 0));
+	return (sqrt_fun(n, 0));
 }
