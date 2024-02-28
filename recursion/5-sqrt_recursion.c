@@ -2,11 +2,30 @@
 
 /**
  * sqrt - raiz cuadrada
- * @r: numero a sacar la raiz cuadrada
+ * @i: numero a sacar la raiz cuadrada
+ * @j: exponente;
  *
- * Return: 
+ * Return: raiz cuadrada
+ */
 
-int sqrt(int r)
+int sqrt(int i, int j)
+{
+	if (i == (j * j))
+	{
+		return (j);
+	}
+	else
+	{
+		if ((j * j) > i)
+		{
+			return (-1);
+		}
+		else
+		{
+			return (sqrt(i, j + 1));
+		}
+	}
+}
 
 /**
  * _sqrt_recursion - raiz cuadrada de un numero
@@ -19,12 +38,12 @@ int _sqrt_recursion(int n)
 {
 	if (n <= 0)
 	{
-		return (1);
+		return (-1);
 	}
 
 	/**
 	 * calcular la raiz cuadrada
 	 */
 
-	return (int);
+	return (sqrt(n, 0);
 }
