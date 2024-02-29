@@ -15,6 +15,16 @@ char *str_concat(char *cad1, char *cad2)
 
 	int i, j;
 
+	if (cad1 == NULL)
+	{
+		cad1 = "";
+	}
+
+	if (cad2 == NULL)
+	{
+		cad2 = "";
+	}
+
 	/**
 	* usamos j para medir la suma del largo de los string
 	*/
