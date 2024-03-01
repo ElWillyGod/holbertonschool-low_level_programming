@@ -5,32 +5,24 @@
 * alloc_grid - crear un array bidimensional
 * @width: ancho
 * @height: altura
-*
 * Return: puntero al primer elemento de la matriz
 */
 
 int **alloc_grid(int width, int height)
 {
 	int i, j;
-
 	int **matriz;
 
 	if ((width < 1) || (height < 1))
 	{
 		return (NULL);
 	}
-
 	matriz = malloc(sizeof(int *) * height);
-	/**
-	* error del malloc
-	*/
+
 	if (matriz == NULL)
 	{
 		return (NULL);
 	}
-	/**
-	* armar el array
-	*/
 
 	for (i = 0; i < width; i++)
 	{
