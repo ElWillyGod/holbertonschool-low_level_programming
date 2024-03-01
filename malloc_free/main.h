@@ -32,4 +32,14 @@ char *_strdup(char *str);
 
 char *str_concat(char *s1, char *s2);
 
+/**
+ * alloc_grid - crear un array bidimensional
+ * @width: ancho
+ * @height: alto
+ *
+ * Return: puntero a la primera pos
+ */
+
+int **alloc_grid(int width, int height);
+
 #endif /* MAIN_H */
