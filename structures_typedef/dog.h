@@ -3,7 +3,7 @@
 
 
 /**
- * rep_dog - estructura de un perro
+ * struct dog - estructura de un perro
  * @name: nombre
  * @age: edad
  * @owner: prop
@@ -18,7 +18,7 @@ struct dog
 	char *owner;
 };
 
-typedef struct dog* Tdog;
+typedef struct dog *Tdog;
 
 #endif /* DOG_H */
 
