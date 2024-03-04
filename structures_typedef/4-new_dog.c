@@ -11,15 +11,14 @@
 
 char *copiar(char *c1, char *c2)
 {
+	int i;
 
-	while (*c2)
+	for (i = 0; c2[i]; i++)
 	{
-		*c1 = *c2;
-		c2++;
-		c1++;
+		c1[i] = c2[i];
 	}
 
-	*c1 = '\0';
+	c1[i++] = '\0';
 
 	return (c1);
 }
