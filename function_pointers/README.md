@@ -1,0 +1,1 @@
+funciones pasadas como punteros
