@@ -3,7 +3,7 @@
 
 /**
 * free_dog - libera un perro
-*
+*@d: dog al liberar
 * Return: void, solo libera
 */
 
