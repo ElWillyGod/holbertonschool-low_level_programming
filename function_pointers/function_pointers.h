@@ -26,4 +26,15 @@ void print_name(char *name, void (*f)(char *));
 
 void array_iterator(int *array, size_t size, void (*action)(int));
 
+/**
+ *int_index - buscar un elemento en un array
+ *@array: array donde estan los elementos
+ *@size: tamanio del arreglo
+ *@cmp: comparar elementos
+ *
+ *Return: int, si no lo encuentra retorna -1
+ */
+
+int int_index(int *array, int size, int (*cmp)(int));
+
 #endif /* FUNTION_POINTERS_H */
