@@ -24,7 +24,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (esChar != NULL)
 		{
-			printf("%s",esChar);
+			printf("%s", esChar);
 		}
 		else
 		{
