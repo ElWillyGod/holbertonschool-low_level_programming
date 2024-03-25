@@ -1,11 +1,10 @@
 #include "lists.h"
 
 /**
-*list_len - numero de elementos de la lista 
+*list_len - numero de elementos de la lista
+*@h: lista a contar;
 *
-*
-*
-*
+*Return: la cantidad de elementos a imprimir;
 */
 
 size_t list_len(const list_t *h)
