@@ -6,6 +6,13 @@
 
 typedef struct rep_dlistint dlistint_t;
 
+/**
+ *struct rep_dlistint - estructura de la lista doble
+ *@n: dato
+ *@next: next nodo
+ *@prev: nodo anterior
+ */
+
 struct rep_dlistint
 {
 	int n;
