@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
+* add_dnodeint - add to date fot list
+*@head: list the add node new
+*@n: date of node new
 *
-*
-*
-*
-*
+*Return: dlistint_t for new node add;
 */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
@@ -21,10 +21,13 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 	newNodo->n = n;
 	newNodo->prev = NULL;
+	newNodo->next = *head;
 
 	if (*head)
 	{
-		
+		(*head)->prev = newNodo;
 	}
+	*head = newNodo;
+
+	return (newNodo);
 }
-/* armar el nodo y agregaro */
