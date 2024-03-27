@@ -2,7 +2,7 @@
 #include <strings.h>
 
 /**
-*dlistint_t - retorna el nodo correspodiente al index
+*get_dnodeint_at_index - retorna el nodo correspodiente al index
 *@head: double linked list
 *@index: index for list to return
 *
