@@ -51,8 +51,7 @@ int main(int argc, char *argv[])
 	FileFrom = open(argv[1], O_RDONLY);
 	ByteRead = read(FileFrom, buffer, 1024);
 	FileTo = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	while (ByteRead > 0)
-	{
+	do {
 		if ((FileFrom == -1) || (ByteRead == -1))
 		{
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
@@ -68,7 +67,8 @@ int main(int argc, char *argv[])
 		}
 		ByteRead = read(FileFrom, buffer, 1024);
 		FileTo = open(argv[2], O_WRONLY | O_APPEND);
-	}
+	} while (ByteRead > 0);
+
 	free(buffer);
 	CloseFile(FileFrom);
 	CloseFile(FileTo);
