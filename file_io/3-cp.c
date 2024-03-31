@@ -74,8 +74,8 @@ int main(int argc, char *argv[])
 	FileFrom = open(argv[1], O_RDONLY);
 	ErrorRead(FileFrom, argv[1]);
 
-	FileFrom = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	ErrorWrite(FileFrom, argv[2]);
+	FileTo = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	ErrorWrite(FileTo, argv[2]);
 
 	while ((ByteChek = read(FileFrom, buffer, 1024)) > 0)
 	{
