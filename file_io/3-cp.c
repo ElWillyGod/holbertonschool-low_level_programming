@@ -13,11 +13,7 @@
 
 void CloseFile(int DescFile)
 {
-	int i;
-
-	i = close(DescFile);
-
-	if (i == -1)
+	if (close(DescFile) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", DescFile);
 		exit(100);
@@ -71,6 +67,6 @@ int main(int argc, char *argv[])
 	CloseFile(FileFrom);
 	CloseFile(FileTo);
 
-	return (0);
+	exit(0);
 }
 
