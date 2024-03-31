@@ -19,7 +19,39 @@ void CloseFile(int DescFile)
 		exit(100);
 	}
 }
+/**
+ *ErrorRead - control de error al leer archivo
+ *@DescFile: int que identifica al archivo
+ *@file: file;
+ *
+ *Return: void
+ */
 
+void ErrorRead(int DescFile, char *file)
+{
+	if (DescFile == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file);
+		exit(98);
+
+	}
+}
+/**
+ *ErrorWrite - control de error de escritura
+ *@DescFile: int que identifica al archivo
+ *@file: file;
+ *
+ *Return: void
+ */
+
+void ErrorWrite(int DescFile, char *file)
+{
+	if (DescFile == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file);
+		exit(99);
+	}
+}
 /**
 *main - copia dos archivos
 *@argc: The number of arguments the program
@@ -30,42 +62,34 @@ void CloseFile(int DescFile)
 
 int main(int argc, char *argv[])
 {
-	int fd, fd2, filecheck;
+	int FileFrom, FileTo, ByteChek;
 	char buffer[1024];
 
 	if (argc != 3)
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
-	fd = open(argv[1], O_RDONLY);
-	if (fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
-	}
-	fd2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (fd2 == -1)
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
-	while ((filecheck = read(fd, buffer, 1024)) > 0)
-	{
-		if (filecheck == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-			exit(98);
-		}
-		filecheck = write(fd2, buffer, filecheck);
-		if (filecheck == -1)
-		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-			exit(99);
-		}
-	}
-	if (filecheck == -1)
-	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		exit(98);
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+		exit(97);
 	}
 
-	CloseFile(fd);
-	CloseFile(fd2);
+	FileFrom = open(argv[1], O_RDONLY);
+	ErrorRead(FileFrom, argv[1]);
+
+	FileFrom = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	ErrorWrite(FileFrom, argv[2]);
+
+	while ((ByteChek = read(FileFrom, buffer, 1024)) > 0)
+	{
+		ErrorRead(FileFrom, argv[1]);
+
+		ByteChek = write(FileTo, buffer, ByteChek);
+
+		ErrorWrite(ByteChek, argv[2]);
+	}
+
+	ErrorRead(ByteChek, argv[1]);
+
+	CloseFile(FileFrom);
+	CloseFile(FileTo);
 
 	return (0);
 }
