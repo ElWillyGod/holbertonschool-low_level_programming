@@ -5,6 +5,22 @@
 #include <unistd.h>
 
 /**
+ *CloseFile - cierra archivo
+ *@DescFile: int que identifica al archivo
+ *
+ *Return: void
+ */
+
+void CloseFile(int DescFile)
+{
+	if (close(DescFile) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", DescFile);
+		exit(100);
+	}
+}
+
+/**
 *main - copia dos archivos
 *@argc: The number of arguments the program
 *@argv: The arguments.
@@ -14,7 +30,7 @@
 
 int main(int argc, char *argv[])
 {
-int fd, fd2, filecheck;
+	int fd, fd2, filecheck;
 	char buffer[1024];
 
 	if (argc != 3)
@@ -47,11 +63,9 @@ int fd, fd2, filecheck;
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	if (close(fd) == -1)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd), exit(100);
-	if (close(fd2) == -1)
-		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd2), exit(100);
+
+	CloseFile(fd);
+	CloseFile(fd2);
 
 	return (0);
 }
-
